@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оберіть колір:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/colorGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/radioRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Червоний" />
+
+        <RadioButton
+            android:id="@+id/radioGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Зелений" />
+
+        <RadioButton
+            android:id="@+id/radioBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Синій" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть текст тут"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:backgroundTint="#03611F"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:backgroundTint="#C50505"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+</LinearLayout>
